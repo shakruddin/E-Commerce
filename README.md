@@ -1,6 +1,6 @@
 # e-commerce
 
-This repo have used vuejs(vutify (it is a framework of vuejs)) with firebase-db, where you can find products and anyone can do register and Login, 
+This repo have used vuejs(vuetify (it is a framework of vuejs)) with firebase-db, where you can find products and anyone can do register and Login, 
 
 ## git clone
 ```
