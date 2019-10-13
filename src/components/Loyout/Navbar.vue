@@ -69,8 +69,8 @@ export default {
     },
     data() {
         return {
-            name: 'slasfl',
-            last: 'sjdfla',
+            name: '',
+            last: '',
             checkLogIn: false,
             drawer: null,
             Sidebar: [{
@@ -184,15 +184,13 @@ export default {
         auth.onAuthStateChanged(user => {
             if (user) {
                 this.checkLogIn = false
+                db.collection('users').doc(user.uid).get().then(res => {
+                    this.name =  res.data().firstName
+                    this.last = res.data().lastName
+                })
             } else {
                 this.checkLogIn = true
             }
-        })
-        db.collection('products').get().then(res => {
-            res.forEach(doc => {
-                this.name = doc.data().name
-                this.last = doc.data().last
-            });
         })
     }
 };
