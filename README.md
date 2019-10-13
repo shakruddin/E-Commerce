@@ -1,5 +1,9 @@
 # e-commerce
 
+## git clone
+```
+git clone https://github.com/shakruddin/E-Commerce.git
+```
 ## Project setup
 ```
 npm install
