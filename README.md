@@ -1,5 +1,7 @@
 # e-commerce
 
+This repo have used vuejs(vutify (it is a framework of vuejs)) with firbase-db, where you can find products and anyone can do register and Login, 
+
 ## git clone
 ```
 git clone https://github.com/shakruddin/E-Commerce.git
